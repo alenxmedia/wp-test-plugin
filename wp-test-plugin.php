@@ -17,8 +17,10 @@
 
   function test_plugin_example_function()
   {
-	  $information = "This is a test plugin.";
+	  $information = "<p>This is a test plugin.</p>";
+	  $information .= "<div>Content in a div.</div>";
 	  return $information;
 	}
+
   add_shortcode( "test_plugin_shorcode", 'test_plugin_example_function' );
 ?>
